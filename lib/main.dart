@@ -21,6 +21,8 @@ void main() async {
   get_it.getInstance.registerSingleton(LoadingProvider());
   get_it.getInstance.registerSingleton(GlobalKey<NavigatorState>());
   unawaited(get_it.init());
+  // await NotificationHelper.initNotifications();
+  // FirebaseMessaging.onBackgroundMessage(NotificationHelper.backgroundHandler);
   runApp(const MyApp());
 }
 
